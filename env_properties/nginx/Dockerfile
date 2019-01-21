@@ -1,6 +1,7 @@
 FROM nginx
 
 RUN adduser --system --no-create-home --shell /bin/false --group --disabled-login nginx
+RUN apt-get update
 RUN apt-get install nano -y
 #RUN apt-get install curl -y
 #RUN apt-get install python2.7 -yf

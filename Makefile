@@ -11,10 +11,10 @@ up-dev:
 	docker-compose -f dev-compose.yml up --build
 
 ssh-django:
-	docker-compose exec -it web bash
+	docker exec -it django bash
 
 ssh-server:
-	docker-compose exec -it nginx_server bash
+	docker exec -it nginx_server bash
 
 install-docker:
 	apt-get update

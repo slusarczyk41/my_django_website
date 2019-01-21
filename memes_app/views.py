@@ -8,11 +8,11 @@ from .models import Meme
 
 
 def index(request):
-
+    meme = Meme.objects.all()[0]
     # write a query to return 5 questions and the most answered choice
     # add another file with sql queries
     # remember about SQL injection
     context = {
-        'my_context': 'FIRST MEME URL'
+        'my_context': meme
     }
     return render(request, 'memes_app/index.html', context)

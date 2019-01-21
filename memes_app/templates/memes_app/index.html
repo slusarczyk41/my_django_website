@@ -4,13 +4,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index page of polls</title>
+    <title>MEMEBASE</title>
     <link rel="stylesheet" type="text/css" href="{% static 'memes_apps/style.css' %}">
 </head>
 <body>
     <p>Hello words xD</p>
     {% if my_context %}
-    <p>{% my_context %}</p>
-    {%  endif %}
+    <img src="{% static my_context.pic.url %}">
+    {% endif %}
 </body>
 </html>
