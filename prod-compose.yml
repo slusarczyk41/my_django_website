@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+
+  web:
+    container_name: django
+    build:
+      context: .
+      dockerfile: ./env_properties/prod/Dockerfile
+    command: gunicorn -w 4 memes.wsgi:application -b 0.0.0.0:8000
+    environment:
+      - DJANGO_SETTINGS_MODULE=memes.settings_prod
+    volumes:
+      - .:/code
+    ports:
+      - '8000:8000'
+
+  nginx:
+    container_name: nginx_server
+    command: nginx -g 'daemon off;'
+    build:
+      context: ./env_properties/nginx
+      dockerfile: Dockerfile
+    depends_on:
+    - web
+    ports:
+    - "0.0.0.0:80:80"
+    tty: true
