@@ -94,7 +94,7 @@
 							<div class="animate-box">
 								<h2>Take advantage of your data</h2>
 								<p>without spending tons of money</p>
-								<p><a href="gallery.html" class="btn btn-primary btn-lg btn-custom">Why me?</a></p>
+								<p><a class="btn btn-primary btn-lg btn-custom" id="why_me_button">Why me?</a></p>
 							</div>
 						</div>
 					</div>
@@ -132,7 +132,7 @@
 			</div>
 		</div>-->
 
-		<div id="sranie" class="colorlib-services colorlib-bg-white" style="padding-top:50px;padding-bottom:0px">
+		<div id="why_me_destination" class="colorlib-services colorlib-bg-white" style="padding-top:60px;padding-bottom:0px">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 text-center animate-box">
@@ -189,7 +189,7 @@
 		</div>
         -->
 
-        <div id="colorlib-counter" class="colorlib-counters" style="background-image: url({% static 'main_page/images/banner_2.jpg' %}" data-stellar-background-ratio="0.5">
+        <div id="colorlib-counter" class="colorlib-counters" style="padding-top:10px;padding-bottom:10px;background-image: url({% static 'main_page/images/banner_2.jpg' %}" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -207,7 +207,7 @@
 							<div class="counter-entry">
 								<span class="icon"><i class="flaticon-church"></i></span>
 								<div class="desc">
-									<span class="colorlib-counter js-counter" data-from="0" data-to="300" data-speed="3000" data-refresh-interval="50"></span>
+									<span class="colorlib-counter js-counter" data-from="0" data-to="200" data-speed="3000" data-refresh-interval="50"></span>
 									<span class="colorlib-counter-label">days</span>
 								</div>
 							</div>
@@ -216,7 +216,7 @@
 							<div class="counter-entry">
 								<span class="icon"><i class="flaticon-dove"></i></span>
 								<div class="desc">
-									<span class="colorlib-counter js-counter" data-from="0" data-to="2400" data-speed="5000" data-refresh-interval="50"></span>
+									<span class="colorlib-counter js-counter" data-from="0" data-to="1800" data-speed="8000" data-refresh-interval="50"></span>
 									<span class="colorlib-counter-label">and hours</span>
 								</div>
 							</div>
@@ -226,14 +226,24 @@
                 <div class="row" style="margin-top:50px;">
                     <div class="col-md-12 animate-box">
                         <p><span class="colorlib-counter-label text-center">of work experience</span></p>
+                        <!--
+                        <button class="btn btn-primary btn-lg btn-custom text-center" id="what_do_i_offer_button">What do I offer?</button>
+                        -->
                     </div>
                 </div>
+
 			</div>
 		</div>
 
-
-		<div class="colorlib-work-featured colorlib-bg-white">
+        <div class="colorlib-work-featured colorlib-bg-white" id="what_do_i_offer_destination" style="padding-top:45px;padding-bottom:30px;">
 			<div class="container">
+                <h2 class="text-center">What can I offer to you?</h2>
+            </div>
+        </div>
+
+		<div class="colorlib-work-featured colorlib-bg-white" id="what_do_i_offer_destination">
+			<div class="container">
+
 				<div class="row mobile-wrap">
 					<div class="col-md-5 animate-box">
 						<div class="mobile-img" style="background-image: url({% static 'main_page/images/my_example_1.png' %}"></div>
@@ -257,9 +267,7 @@
 								<div class="f-desc">
 									<h3>What's the benefit?</h3>
                                     <p>
-                                        I can take a closer look and find patterns of their behaviour and
-                                        any other relevant information, which will give you insight in
-                                        their habits and let you develop your product to meet their requirements.
+                                        DWda
                                     </p>
 								</div>
 							</div>
@@ -268,9 +276,7 @@
 								<div class="f-desc">
                                     <h3>Why is it so important?</h3>
 									<p>
-                                        During past few decades it became so easily to create and develop
-                                        new companies, that it is hard to win with competition - thanks to
-                                        improving our product constantly, you will be always one step ahead of them.
+                                        dawd
                                     </p>
 								</div>
 							</div>
@@ -610,6 +616,20 @@
 	<script src="{% static 'main_page/js/jquery.countTo.js' %}"></script>
 	<!-- Main -->
 	<script src="{% static 'main_page/js/main.js' %}"></script>
+
+    <script>
+        $('#why_me_button').click(function() {
+            $("html, body").animate({
+                scrollTop: $('#why_me_destination').offset().top
+            }, 1000)
+        });
+
+        $('#what_do_i_offer_button').click(function() {
+            $("html, body").animate({
+                scrollTop: $('#what_do_i_offer_destination').offset().top
+            }, 1000)
+        });
+    </script>
 
 	</body>
 </html>
