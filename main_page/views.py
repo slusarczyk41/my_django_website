@@ -10,4 +10,4 @@ def index(request):
     context = {
         'my_context': 'FIRST MEME URL'
     }
-    return render(request, 'main_page/home.html', context)
+    return render(request, 'main_page/index.html', context)

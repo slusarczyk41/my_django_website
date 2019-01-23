@@ -3,7 +3,7 @@ version: '3'
 services:
 
   web:
-    container_name: django
+    container_name: django_web
     build:
       context: .
       dockerfile: ./env_properties/prod/Dockerfile
@@ -16,15 +16,13 @@ services:
       - '8000:8000'
 
   nginx:
-    container_name: nginx_server
-    command: nginx -g 'daemon off;' -c nginx.conf
+    container_name: nginx_server_2
+    command: nginx -g 'daemon off;'
     build:
-      context: ./env_properties/nginx
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: env_properties/nginx/Dockerfile
     depends_on:
     - web
     ports:
     - "0.0.0.0:80:80"
-    volumes:
-      - .:/code
-    #tty: true
+    tty: true
