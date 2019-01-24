@@ -5,10 +5,25 @@
 {% endblock %}
 
 {% block welcome_section %}
-    <h2>Take advantage of your data</h2>
-    <p>right now, without wasting time and money on another workplace</p>
-    <p><a class="btn btn-primary btn-lg btn-custom" id="why_me_button">Why me?</a></p>
+    <section id="home" class="video-hero" data-section="home" style="background-attachment: scroll;">
+    <div class="overlay"></div>
+        <div class="display-t text-center">
+            <div class="display-tc">
+                <div class="container">
+                    <div class="col-md-12 col-md-offset-0">
+                        <div class="animate-box">
+                            <h2>Take advantage of your data</h2>
+                            <p>right now, without wasting time and money on another workplace</p>
+                            <p><a class="btn btn-primary btn-lg btn-custom" id="why_me_button">Why me?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
+
+
 
 {% block content %}
     {% load static %}
@@ -109,7 +124,7 @@
 
             <div class="row mobile-wrap">
                 <div class="col-md-5 animate-box">
-                    <div class="mobile-img" style="background-image: url({% static 'main_page/images/my_example_1.png' %}"></div>
+                    <div class="mobile-img" style="background-image: url({% static 'main_page/images/short_offer_1.jpg' %}"></div>
                 </div>
                 <div class="col-md-7 animate-box">
                     <div class="desc">
@@ -150,13 +165,13 @@
                                 </p>
                             </div>
                         </div>
-                        <p><a href="#" class="btn btn-primary btn-outline with-arrow">Start collaborating <i class="icon-arrow-right3"></i></a></p>
+                        <p><a href="{% url 'main_page:services' %}" class="btn btn-primary btn-outline with-arrow">Get more insight<i class="icon-arrow-right3"></i></a></p>
                     </div>
                 </div>
             </div> <!-- https://placehold.it/744x1319 -->
             <div class="row mobile-wrap">
                 <div class="col-md-5 col-md-push-7 animate-box">
-                    <div class="mobile-img" style="background-image: url({% static 'main_page/images/my_example_2.png' %}"></div>
+                    <div class="mobile-img" style="background-image: url({% static 'main_page/images/short_offer_2.jpg' %}"></div>
                 </div>
                 <div class="col-md-7 col-md-pull-5 animate-box">
                     <div class="desc">
@@ -194,7 +209,7 @@
             </div>
             <div class="row mobile-wrap">
                 <div class="col-md-5 animate-box">
-                    <div class="mobile-img" style="background-image: url({% static 'main_page/images/my_example_4.jpg' %}"></div>
+                    <div class="mobile-img" style="background-image: url({% static 'main_page/images/short_offer_3.jpg' %}"></div>
                 </div>
                 <div class="col-md-7 animate-box">
                     <div class="desc">
@@ -226,7 +241,7 @@
                                 </p>
                             </div>
                         </div>
-                        <p><a href="#" class="btn btn-primary btn-outline with-arrow">Start collaborating <i class="icon-arrow-right3"></i></a></p>
+                        <p><a href="{% url 'main_page:contact' %}" class="btn btn-primary btn-outline with-arrow">Contact me<i class="icon-arrow-right3"></i></a></p>
                     </div>
                 </div>
             </div>
