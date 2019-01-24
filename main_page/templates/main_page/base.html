@@ -1,0 +1,160 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+
+    <!-- reCAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'main_page/css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'main_page/css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'main_page/css/bootstrap.css' %}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'main_page/css/magnific-popup.css' %}">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static 'main_page/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'main_page/css/owl.theme.default.min.css' %}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'main_page/css/style.css' %}">
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'main_page/js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'main_page/js/respond.min.js' %}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div id="colorlib-logo"><a href="{% url 'main_page:index' %}">Data guy</a></div>
+						</div>
+						<div class="col-md-10 text-right menu-1">
+							<ul>
+								<li class="active"><a href="{% url 'main_page:index' %}">Home</a></li>
+								<li><a href="{% url 'main_page:services' %}">Services</a></li>
+								<li><a href="{% url 'main_page:about' %}">About</a></li>
+								<li><a href="{% url 'main_page:contact' %}">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section id="home" class="video-hero" data-section="home" style="background-attachment: scroll;">
+		<div class="overlay"></div>
+			<a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=vqqt5p0q-eU',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
+			<div class="display-t text-center">
+				<div class="display-tc">
+					<div class="container">
+						<div class="col-md-12 col-md-offset-0">
+							<div class="animate-box">
+                                {% block welcome_section %}{% endblock %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        {% block content %}{% endblock %}
+
+
+
+
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p style="margin-bottom:0px">
+
+&copy;<script>document.write(new Date().getFullYear());</script> Jacek Ślusarczyk | CSS theme by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="{% static 'main_page/js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'main_page/js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'main_page/js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'main_page/js/jquery.waypoints.min.js' %}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{% static 'main_page/js/jquery.stellar.min.js' %}"></script>
+	<!-- YTPlayer -->
+	<!--<script src="{% static 'main_page/js/jquery.mb.YTPlayer.min.js' %}"></script>-->
+	<!-- Owl carousel -->
+	<script src="{% static 'main_page/js/owl.carousel.min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'main_page/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'main_page/js/magnific-popup-options.js' %}"></script>
+	<!-- Counters -->
+	<script src="{% static 'main_page/js/jquery.countTo.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'main_page/js/main.js' %}"></script>
+
+    <script>
+        $('#why_me_button').click(function() {
+            $("html, body").animate({
+                scrollTop: $('#why_me_destination').offset().top
+            }, 1000)
+        });
+
+        $('#what_do_i_offer_button').click(function() {
+            $("html, body").animate({
+                scrollTop: $('#what_do_i_offer_destination').offset().top
+            }, 1000)
+        });
+    </script>
+
+	</body>
+</html>
+
