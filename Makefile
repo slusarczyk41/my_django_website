@@ -19,3 +19,10 @@ ssh-server:
 install-docker:
 	apt-get update
 	apt-get install docker-compose -y
+
+migrate:
+	python manage.py makemigrations --noinput
+	python manage.py migrate --noinput
+
+staticfiles:
+	python manage.py collectstatic --noinput

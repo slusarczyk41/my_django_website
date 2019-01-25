@@ -2,6 +2,7 @@ FROM python:3
 
 ENV PYTHONUNBUFFERED 1
 ENV DJANGO_SETTINGS_MODULE=memes.settings_dev
+RUN bash source env_properties/.env.sh
 
 RUN mkdir /code
 WORKDIR /code
