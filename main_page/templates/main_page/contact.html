@@ -5,9 +5,8 @@
 {% endblock %}
 
 {% block welcome_section %}
-    <section id="home" class="video-hero" data-section="home" style="background-attachment: scroll;">
-    <div class="overlay"></div>
-        <div class="display-t text-center">
+    <section id="home" class="video-hero" data-section="home" style="height:400px;padding:50px;background-attachment: scroll;">
+        <div class="display-t text-center" style="height:300px;">
             <div class="display-tc">
                 <div class="container">
                     <div class="col-md-12 col-md-offset-0">
@@ -28,55 +27,55 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-push-8 animate-box">
-                    <h2>Contact Information</h2>
+                    <h2>See me also at</h2>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="contact-info-wrap-flex">
-                                <div class="con-info">
+                                <!--<div class="con-info">
                                     <p><span><i class="icon-paperplane"></i></span> <a href="mailto:slusarczyk41@gmail.com">Send an email</a></p>
+                                </div>-->
+                                <div class="con-info">
+                                    <p><span><i class="icon-paperplane"></i></span> <a href="https://linkedin.com/in/jacek-ślusarczyk-969537158/" target="_blank">Linkedin</a></p>
                                 </div>
                                 <div class="con-info">
-                                    <p><span><i class="icon-paperplane"></i></span> <a href="https://linkedin.com/in/jacek-ślusarczyk-969537158/" target="_blank">Visit Linkedin</a></p>
+                                    <p><span><i class="icon-paperplane"></i></span> <a href="https://github.com/slusarczyk41" target="_blank">GitHub</a></p>
                                 </div>
                                 <div class="con-info">
-                                    <p><span><i class="icon-paperplane"></i></span> <a href="https://github.com/slusarczyk41" target="_blank">Take a look at GitHub</a></p>
-                                </div>
-                                <div class="con-info">
-                                    <p><span><i class="icon-paperplane"></i></span> <a href="https://www.upwork.com/freelancers/~01f3068d89ec8e07cd" target="_blank">See upwork profile</a></p>
+                                    <p><span><i class="icon-paperplane"></i></span> <a href="https://www.upwork.com/freelancers/~01f3068d89ec8e07cd" target="_blank">Upwork</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8 col-md-pull-4 animate-box">
-                    <h2>Get In Touch</h2>
-                    <form action="?" method="POST">
+                    <h2>Send a message</h2>
+                    <form method="POST" id="contact_form">
                     {% csrf_token %}
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <!-- <label for="fname">First Name</label> -->
-                                <input type="text" id="name" class="form-control" placeholder="Your name" required>
+                                <input value='test_name' type="text" maxlength="50" id="name" class="form-control" placeholder="Your name" required>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <!-- <label for="email">Email</label> -->
-                                <input type="text" id="email" class="form-control" placeholder="Your email address" required>
+                                <input value="'test_mail@wp.pl" type="email" maxlength="50" id="email" class="form-control" placeholder="Your email address" required>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <!-- <label for="subject">Subject</label> -->
-                                <input type="text" id="subject" class="form-control" placeholder="Your subject of this message" required>
+                                <input value="test_subject" type="text" maxlength="100" id="subject" class="form-control" placeholder="Your subject of this message" required>
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <!-- <label for="message">Message</label> -->
-                                <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us" required></textarea>
+                                <textarea name="message" maxlength="1000" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about your inquiry - in case of project valuation provide some details, what technology you want to use, what functionality you need,  " required>test_text</textarea>
                             </div>
                         </div>
 
@@ -85,7 +84,11 @@
                                 <div class="g-recaptcha" data-sitekey="6LdpY4wUAAAAAFp42O7DaBqI2Z55zWXd9Q6QssPf" style="padding-bottom:20px;"></div>
                             </div>
                             <div class="col-md-12">
-                                <input type="submit" value="Send Message" class="btn btn-primary">
+                                <input id="submit_button" type="submit" value="Send Message" class="btn btn-primary">
+                                <img hidden id="contact_form_waiting" type="image" src="{% static 'main_page/images/waiting.gif' %}" style="width: 20px; height: 20px;">
+                            </div>
+                            <div class="col-md-12">
+                                <p id="contact_form_result"></p>
                             </div>
                         </div>
                     </form>
@@ -93,4 +96,48 @@
             </div>
         </div>
     </div>
+
+{% endblock %}
+
+{% block scripts %}
+
+    <script>
+    $(function() {
+      $('#contact_form').submit(function(event) {
+        event.preventDefault();
+
+        if ($('#g-recaptcha-response').val() != '') {
+            $('#contact_form_waiting').show();
+            $('#submit_button').prop('disabled', true);
+
+            $.ajax({
+              type: "POST",
+              url: "{% url 'main_page:contact_endpoint' %}",
+              data: {
+                  name: $('#name').val(),
+                  email: $('#email').val(),
+                  subject: $('#subject').val(),
+                  message: $('#message').val(),
+                  csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
+                  captcha: $('#g-recaptcha-response').val(),
+              }
+            }).done(function() {
+              $("#contact_form")[0].reset();
+              $("#contact_form_result").text("Message sent successfully!";
+              $('#contact_form_waiting').hide();
+
+            }).fail(function() {
+              $("#contact_form_result").text("Something went wrong, try again or try another form of contact");
+              $('#contact_form_waiting').hide();
+              $('#submit_button').prop('disabled', false);
+            });
+
+        } else {
+            $("#contact_form_result").text("Please verify that you are a human");
+        }
+
+      });
+    });
+    </script>
+
 {% endblock %}

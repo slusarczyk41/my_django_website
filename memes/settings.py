@@ -138,3 +138,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # explore this filesystem using bash (for example)
 # docker run -t -i mysnapshot /bin/bash
+
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'contact@dataguy.pl'
+EMAIL_HOST_PASSWORD = os.environ.get('DJANGO_EMAIL_PASSWORD')
+
+# https://help.zoho.com/portal/community/topic/how-to-configure-django-settings

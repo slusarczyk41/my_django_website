@@ -3,6 +3,8 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.db.models import F
 from django.utils import timezone
+from django_ajax.decorators import ajax
+from django.core.mail import EmailMessage
 
 import requests
 
@@ -47,3 +49,29 @@ def contact(request):
         '': ''
     }
     return render(request, 'main_page/contact.html', context)
+
+
+def valuation(request):
+    context = {
+        '': ''
+    }
+    return render(request, 'main_page/valuation.html', context)
+
+
+@ajax
+def contact_endpoint(request):
+
+    email = EmailMessage(
+        subject=request.POST['subject'],
+        body="Message from "+request.POST['name']+"\n\n"+request.POST['message'],
+        from_email='contact@dataguy.pl',
+        to=['slusarczyk41@gmail.com'],
+        reply_to=[request.POST['email']],
+        headers={'Content-Type': 'text/plain'},
+    )
+
+    try:
+        email.send()
+        return True
+    except ValueError:
+        return False

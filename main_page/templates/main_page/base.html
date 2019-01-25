@@ -67,9 +67,10 @@
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li class="active"><a href="{% url 'main_page:index' %}">Home</a></li>
+								<li><a href="{% url 'main_page:index' %}">Home</a></li>
 								<li><a href="{% url 'main_page:services' %}">Services</a></li>
-								<li><a href="{% url 'main_page:about' %}">About</a></li>
+                                <!--<li><a href="{% url 'main_page:valuation' %}">Valuation</a></li>-->
+								<li><a href="{% url 'main_page:about' %}">About me</a></li>
 								<li><a href="{% url 'main_page:contact' %}">Contact</a></li>
 							</ul>
 						</div>
@@ -140,6 +141,8 @@
             }, 1000)
         });
     </script>
+
+    {% block scripts %}{% endblock %}
 
 	</body>
 </html>
