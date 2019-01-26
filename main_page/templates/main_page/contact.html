@@ -123,11 +123,13 @@
               }
             }).done(function() {
               $("#contact_form")[0].reset();
-              $("#contact_form_result").text("Message sent successfully!");
+              //$("#contact_form_result").text("Message sent successfully!");
               $('#contact_form_waiting').hide();
+              $('#submit_button').val("Message sent successfully!");
 
             }).fail(function() {
-              $("#contact_form_result").text("Something went wrong, try again or try another form of contact");
+              //$("#contact_form_result").text("Something went wrong, try again or try another form of contact");
+              $('#submit_button').val("Something went wrong, try again or try another form of contact");
               $('#contact_form_waiting').hide();
               $('#submit_button').prop('disabled', false);
             });

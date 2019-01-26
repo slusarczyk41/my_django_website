@@ -75,3 +75,8 @@ def contact_endpoint(request):
         return True
     except ValueError:
         return False
+
+@ajax
+def download_cv_endpoint(request):
+
+    return 'bla'

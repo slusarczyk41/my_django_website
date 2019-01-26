@@ -1479,6 +1479,13 @@ input[type="text"] {
 .row-pb-sm {
   padding-bottom: 3em !important; }
 
+.fast-animation {
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -vendor-animation-duration: 0.2s;
+  -vendor-animation-delay: 0s;
+}
+
 .nopadding {
   padding: 0 !important;
   margin: 0 !important; }

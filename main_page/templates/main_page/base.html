@@ -128,19 +128,6 @@
 	<!-- Main -->
 	<script src="{% static 'main_page/js/main.js' %}"></script>
 
-    <script>
-        $('#why_me_button').click(function() {
-            $("html, body").animate({
-                scrollTop: $('#why_me_destination').offset().top
-            }, 1000)
-        });
-
-        $('#what_do_i_offer_button').click(function() {
-            $("html, body").animate({
-                scrollTop: $('#what_do_i_offer_destination').offset().top
-            }, 1000)
-        });
-    </script>
 
     {% block scripts %}{% endblock %}
 
