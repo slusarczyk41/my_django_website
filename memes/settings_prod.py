@@ -11,4 +11,5 @@ ALLOWED_HOSTS = [
     '0.0.0.0',
     'dataguy.pl',
     'dataguy',
+    'modernhippie.eu',
 ]
