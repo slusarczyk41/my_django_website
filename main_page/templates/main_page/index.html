@@ -33,7 +33,7 @@
                 <div class="col-md-4 text-center animate-box">
                     <div class="services">
                         <span class="icon">
-                            <i class="icon-browser"></i>
+                            <i class="icon-circle-compass"></i>
                         </span>
                         <div class="desc">
                             <h3>Programmer</h3>
@@ -44,7 +44,7 @@
                 <div class="col-md-4 text-center animate-box">
                     <div class="services">
                         <span class="icon">
-                            <i class="icon-download"></i>
+                            <i class="icon-codepen"></i>
                         </span>
                         <div class="desc">
                             <h3>Perfectionist</h3>
@@ -55,7 +55,7 @@
                 <div class="col-md-4 text-center animate-box">
                     <div class="services">
                         <span class="icon">
-                            <i class="icon-layers"></i>
+                            <i class="icon-lightbulb"></i>
                         </span>
                         <div class="desc">
                             <h3>Enthusiast</h3>
@@ -128,38 +128,35 @@
                     <div class="desc">
                         <h2>My services</h2>
                         <div class="features">
-                            <span class="icon"><i class="icon-circle-compass"></i></span>
                             <div class="f-desc">
+                                <span class="icon"><i class="icon-square-check"></i></span>
                                 <h3>Data science</h3>
                                 <p>
-                                    In this popular lately term
+                                    Any kind of data analysis based on data present in data warehouse, to be scrapped
+                                    from websites or from API's, user segmentation or pattern analysis,
+                                    preparing reports in most of tools and advising about KPI metrics.
                                 </p>
                             </div>
                         </div>
                         <div class="features">
-                            <span class="icon"><i class="icon-lightbulb"></i></span>
                             <div class="f-desc">
-                                <h3>Reporting automation</h3>
-                                <p>
-                                    dwawad
-                                </p>
-                            </div>
-                        </div>
-                        <div class="features">
-                            <span class="icon"><i class="icon-beaker"></i></span>
-                            <div class="f-desc">
+                                <span class="icon"><i class="icon-square-check"></i></span>
                                 <h3>Algorithmic trading</h3>
                                 <p>
-                                    dwadawadw
+                                    Deploying from beginning to end, at any kind
+                                    of broker which has API (Oanda for example). It includes setting a virtual machine,
+                                    writing script, training machine learning model (if necessary), advising about
+                                    trading startegy itself, and tutorial of basic how-to and documentation.
                                 </p>
                             </div>
                         </div>
                         <div class="features">
-                            <span class="icon"><i class="icon-beaker"></i></span>
                             <div class="f-desc">
+                                <span class="icon"><i class="icon-square-check"></i></span>
                                 <h3>Web development</h3>
                                 <p>
-                                    dwadawadw
+                                    Making basic websites for small businesses, or websites which uses
+                                    machine learning algorithms, or adding such feature to already existing project.
                                 </p>
                             </div>
                         </div>
@@ -173,39 +170,48 @@
                 </div>
                 <div class="col-md-7 col-md-pull-5 animate-box">
                     <div class="desc">
-                        <h2>How does the cooperation look like?</h2>
+                        <h2>The cooperation</h2>
                         <div class="features">
-                            <span class="icon"><i class="icon-circle-compass"></i></span>
+                            <span class="icon"><i class="icon-question"></i></span>
                             <div class="f-desc">
-                                <h3>Kinds of cooperation</h3>
+                                <h3>How can we collaborate?</h3>
                                 <p>
-                                    dwawadwawad
+                                    I am able to travel to the client, or solve an issue working
+                                    remotely. Even though in my opinion it is good to meet at the beginning
+                                    eye to eye, so I can better understand what are the company needs.
                                 </p>
                             </div>
                         </div>
                         <div class="features">
-                            <span class="icon"><i class="icon-lightbulb"></i></span>
+                            <span class="icon"><i class="icon-question"></i></span>
                             <div class="f-desc">
-                                <h3>dawdaw</h3>
+                                <h3>Why is that better for you?</h3>
                                 <p>
-                                    dawawd
+                                    By hiring only for specific purpose you are sure that no money
+                                    will be wasted on somebody who is not needed all the time. Many
+                                    analysis in small and medium sized companies, like reports,
+                                    questions or concerns about product, A/B testing, when are done,
+                                    analysis guy is no longer needed. That kind of cooperation let's you
+                                    solve such an issue with lowest cost possible.
                                 </p>
                             </div>
                         </div>
                         <div class="features">
-                            <span class="icon"><i class="icon-beaker"></i></span>
+                            <span class="icon"><i class="icon-question"></i></span>
                             <div class="f-desc">
-                                <h3>dwaadw</h3>
+                                <h3>And for me</h3>
                                 <p>
-                                    dwaadwawd
+                                    In this way I can gain as much experience and knowledge as possible,
+                                    and since I work often about optimizing resources or business processes
+                                    I try to optimize also my work, free time and earnings.
                                 </p>
                             </div>
                         </div>
-                        <p><a href="#" class="btn btn-primary btn-outline with-arrow">Start collaborating <i class="icon-arrow-right3"></i></a></p>
+                        <p><a href="{% url 'main_page:contact' %}" class="btn btn-primary btn-outline with-arrow">Send a message<i class="icon-arrow-right3"></i></a></p>
                     </div>
                 </div>
             </div>
-            <div class="row mobile-wrap">
+            <!--<div class="row mobile-wrap">
                 <div class="col-md-5 animate-box">
                     <div class="mobile-img" style="background-image: url({% static 'main_page/images/short_offer_3.jpg' %}"></div>
                 </div>
@@ -242,7 +248,7 @@
                         <p><a href="{% url 'main_page:contact' %}" class="btn btn-primary btn-outline with-arrow">Contact me<i class="icon-arrow-right3"></i></a></p>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 {% endblock %}

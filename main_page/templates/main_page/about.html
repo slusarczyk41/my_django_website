@@ -26,12 +26,12 @@
     <div class="colorlib-about" style="padding-bottom: 10px;">
         <div class="container">
             <div class="row row-pb-lg" style="padding-bottom: 10px;">
-                <div class="col-md-5 animate-box">
+                <div style="padding: 5px;" class="col-md-5 animate-box">
                     <!--<div class="video colorlib-video" style="background-image: url({% static 'main_page/images/profile.jpg' %});"></div>-->
                     <img class="video colorlib-video" src="{% static 'main_page/images/profile.jpg' %}">
                 </div>
                 <div class="col-md-6 animate-box fast-animation">
-                    <h2>Jacek Ślusarczyk</h2>
+                    <h2 style="margin-top: 30px;">Jacek Ślusarczyk</h2>
                     <p>
                         I am graduated student, currently employed, with plans for beeing a freelancer.
                         Profession lover and tech enthusiast, always looking for a way for skills improvement.
@@ -41,10 +41,12 @@
                         able to create tools for small and medium sized companies which cannot afford
                         employing data scientist on contractual basis.
                     </p>
+                    <!--
                     <div class="g-recaptcha" data-sitekey="6LdpY4wUAAAAAFp42O7DaBqI2Z55zWXd9Q6QssPf" style="position: center;padding-bottom:20px;"></div>
                     {% csrf_token %}
                     <button class="btn btn-primary" id="download_cv">Download CV</button>
                     <img hidden id="contact_form_waiting" type="image" src="{% static 'main_page/images/waiting.gif' %}" style="width: 20px; height: 20px;"><br>
+                    -->
                 </div>
             </div>
             <!--<div class="row">
@@ -54,290 +56,290 @@
                 </div>
             </div>-->
 
+        </div>
+    </div>
 
-            <div class="colorlib-work-featured colorlib-bg-white animate-box" style="padding-top:45px;padding-bottom:20px;">
-                    <div class="container">
-                        <h2 class="text-center">Skills</h2>
+    <div style="padding-top: 20px; padding-bottom: 0px;" class="colorlib-work">
+        <div class="col-md-12">
+            <div class="colorlib-work-featured colorlib-bg-white animate-box" style="padding-top:55px;padding-bottom:10px;margin-bottom: 0px;">
+                <h2 class="text-center">Skills</h2>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top: 50px;" class="colorlib-work">
+        <div class="row">
+            <div class="row-pb-sm">
+                <div class="work-flex">
+                    <div class="half animate-box">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-md-push-12 no-gutters">
+                                <a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_python.png' %});"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half animate-box">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-md-pull-12 no-gutters">
+                                <div class="display-t desc">
+                                    <div class="display-tc">
+                                        <h2><a href="#">Python</a></h2>
+                                        <p>
+                                            The most multifunctional tool I make use of - commonly used
+                                            at home, work and studies. I can easily make most of machine learning algorithms using
+                                            this tool, make basic website, connect to any API or any data source.
+                                        </p>
+                                        <ul>
+                                            <li>Well known libraries: pandas, numpy, sk-learn, django</li>
+                                            <li>Basic knowledge of: tensorflow, opencv</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row-pb-sm">
+                <div class="work-flex">
+                    <div class="half animate-box">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 no-gutters">
+                                <a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_sql.png' %});"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half animate-box">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 no-gutters">
+                                <div class="display-t desc">
+                                    <div class="display-tc">
+                                        <h2><a href="#">SQL</a></h2>
+                                        <p>
+                                            Used at work on daily basis since the beginning of career.
+                                            I am good at writing complex queries to extract as much information
+                                            from available data as possible and optimizing them to use less
+                                            scanned data. So far I didn't have an occasion to set-up
+                                            a database, but it is something I will have to do anyway soon.
+                                        </p>
+                                        <ul>
+                                            <li>Known engines/syntax: postgres, hive, presto, pyspark</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-pb-sm">
+                <div class="work-flex">
+                    <div class="half animate-box">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-md-push-12 no-gutters">
+                                <a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_bi.png' %});"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half animate-box">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 col-md-pull-12 no-gutters">
+                                <div class="display-t desc">
+                                    <div class="display-tc">
+                                        <h2><a href="#">Business intelligence</a></h2>
+                                        <p>
+                                            Used to collaborate with product owners and working as product analyst,
+                                            I am able to find a proper KPI's and help with deciding how the data
+                                            should be tracked, so you are able to find important information
+                                            without overwhelming amount of data. I can also prepare dashboards for
+                                            management in variety of tools.
+                                        </p>
+                                        <ul>
+                                            <li>Well known tools: Tableau, Google Data Studio, CleverTap, Google Analytics</li>
+                                            <li>Solid basics of: SAS, Grafana</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-pb-sm">
+                <div class="work-flex">
+                    <div class="half animate-box">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 no-gutters">
+                                <a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_others.png' %});"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half animate-box">
+                        <div class="row no-gutters">
+                            <div class="col-md-12 no-gutters">
+                                <div class="display-t desc">
+                                    <div class="display-tc">
+                                        <h2><a href="#">Others</a></h2>
+                                        <ul>
+                                            <li>Linux - terminal/vm used on daily basis</li>
+                                            <!--<li>GitHub - mastered in a good degree</li>-->
+                                            <!--<li>Clean code - very important since I started to work in the team</li>-->
+                                            <li>Statistics - well known linear regression and decision trees, basic knowledge of neural networks</li>
+                                            <li>Excel - convenient with most of advanced functions</li>
+                                            <li>Stock analysis and risk management - self-learning, courses at university</li>
+                                            <li>Jira - hands-on experience with creating tickets for a team</li>
+                                            <li>JS/HTML/CSS - knowledge good enough to write moderate scripts and easily fit css templates to the requirements</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="colorlib-work">
-			<div class="container">
+    <div style="padding-top: 20px; padding-bottom: 0px;" class="colorlib-work">
+        <div class="col-md-12">
+            <div class="colorlib-work-featured colorlib-bg-white animate-box" style="padding-top:55px;padding-bottom:10px;margin-bottom: 0px;">
+                <h2 class="text-center">Work experience</h2>
+            </div>
+        </div>
+    </div>
 
-				<div class="row">
-
-					<div class="row-pb-sm">
-						<div class="work-flex">
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-push-12 no-gutters">
-										<a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_python.png' %});"></a>
-									</div>
-								</div>
-							</div>
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-pull-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2><a href="#">Python</a></h2>
-												<p>
-                                                    The most multifunctional tool I make use of - commonly used
-                                                    at home, work and studies. I can easily make most of machine learning algorithms using
-                                                    this tool, make basic website, connect to any API or any data source.
-                                                </p>
-                                                <ul>
-                                                    <li>Well known libraries: pandas, numpy, sk-learn, django</li>
-                                                    <li>Basic knowledge of: tensorflow, opencv</li>
-                                                </ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-                    <div class="row-pb-sm">
-						<div class="work-flex">
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_sql.png' %});"></a>
-									</div>
-								</div>
-							</div>
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2><a href="#">SQL</a></h2>
-												<p>
-                                                    Used at work on daily basis since the beginning of career.
-                                                    I am good at writing complex queries to extract as much information
-                                                    from available data as possible and optimizing them to use less
-                                                    scanned data. So far I didn't have an occasion to set-up
-                                                    a database, but it is something I will have to do anyway soon.
-                                                </p>
-                                                <ul>
-                                                    <li>Known engines/syntax: postgres, hive, presto, pyspark</li>
-                                                </ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-                    <div class="row-pb-sm">
-						<div class="work-flex">
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-push-12 no-gutters">
-										<a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_python.png' %});"></a>
-									</div>
-								</div>
-							</div>
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-pull-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2><a href="#">Business intelligence</a></h2>
-												<p>
-                                                    It is important for businesses to make use of the basic, simple data it has
-                                                    to design proper metrics to monitor business processes, known as KPI's.
-                                                </p>
-                                                <ul>
-                                                    <li>Well known tools: Tableau, Google Data Studio, CleverTap, Google Analytics, Jira</li>
-                                                    <li>Solid basics of: SAS, Grafana</li>
-                                                </ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-                    <div class="row-pb-sm">
-						<div class="work-flex">
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_sql.png' %});"></a>
-									</div>
-								</div>
-							</div>
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2><a href="#">Others</a></h2>
-                                                <ul>
-                                                    <li>Linux: </li>
-                                                    <li>GitHub: </li>
-                                                    <li>Clean code</li>
-                                                    <li>Statistics</li>
-                                                    <li>Excel: </li>
-                                                    <li>Stock analysis</li>
-                                                    <li>Jira</li>
-                                                    <li>Js/HTML</li>
-                                                </ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-				</div>
-
-                <div class="colorlib-work-featured colorlib-bg-white animate-box" style="padding-top:55px;padding-bottom:30px;margin-bottom: 100px;">
-                    <div class="container">
-                        <h2 class="text-center">Work experience</h2>
+    <div style="padding-top: 50px;" class="colorlib-work">
+        <div class="row-pb-sm">
+            <div class="work-flex">
+                <div class="half animate-box">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 col-md-push-12 no-gutters">
+                            <a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_qpony.png' %});"></a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row">
-
-					<div class="row-pb-sm">
-						<div class="work-flex">
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-push-12 no-gutters">
-										<a href="#" class="work-img" style="background-size: 65% 80%; background-image: url({% static 'main_page/images/logo_qpony.webp' %});"></a>
-									</div>
-								</div>
-							</div>
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-pull-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2><a href="#">Qpony</a></h2>
-												<p>My first part-time job as a data analyst. My objective was to analyze user behawior with the help of python/excel and data sources like data warehouse/Google Analitycs/CleverTap. I also started to learn how can I use machine learning to improve user experience, like OCR, image recognition or simple recommendation system.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-                    <div class="row-pb-sm">
-						<div class="work-flex">
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<a href="#" class="work-img" style="background-size: 65% 80%; background-image: url({% static 'main_page/images/logo_fandom.png' %});"></a>
-									</div>
-								</div>
-							</div>
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2><a href="#">FANDOM</a></h2>
-												<p>Full-time internship based on two machine learning projects. Purpose of the first one was to divide users into two groups based on probability of watching featured video, so we can target video ad campaigns better. This project I designed, created and deployed on my own with help of my mentor, using PySpark to gather data and sk-learn to train a model. Besides that I work on predicting Google Ad Manager response for an ad to manage number of ad slots on a page, and work with mobile app team as product analyst.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-                <div class="colorlib-work-featured colorlib-bg-white animate-box" style="padding-top:55px;padding-bottom:30px;margin-bottom: 100px;">
-                    <div class="container">
-                        <h2 class="text-center">Education</h2>
+                <div class="half animate-box">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 col-md-pull-12 no-gutters">
+                            <div class="display-t desc">
+                                <div class="display-tc">
+                                    <h2><a href="#">Qpony</a></h2>
+                                    <p>My first part-time job as a data analyst. My objective was to analyze user behawior with the help of python/excel and data sources like data warehouse/Google Analitycs/CleverTap. I also started to learn how can I use machine learning to improve user experience, like OCR, image recognition or simple recommendation system.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="row">
+        <div class="row-pb-sm">
+            <div class="work-flex">
+                <div class="half animate-box">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 no-gutters">
+                            <a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_fandom.png' %});"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half animate-box">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 no-gutters">
+                            <div class="display-t desc">
+                                <div class="display-tc">
+                                    <h2><a href="#">FANDOM</a></h2>
+                                    <p>Full-time job based on two machine learning projects. Purpose of the first one was to divide users into two groups based on probability of watching featured video, so we can target video ad campaigns better. This project I designed, created and deployed on my own with help of my mentor, using PySpark to gather data and sk-learn to train a model. Besides that I work on predicting Google Ad Manager response for an ad to manage number of ad slots on a page, and work with mobile app team as product analyst.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-					<div class="row-pb-sm">
-						<div class="work-flex">
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-push-12 no-gutters">
-										<a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_uep.png' %});"></a>
-									</div>
-								</div>
-							</div>
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-pull-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2><a href="#">Poznań University of Economics and Business</a></h2>
-                                                <ul>
-												    <li>Informatics and Econometrics faculty, Financial engineering specialization</li>
-											        <li>
-                                                        That was my first step to learn IT related topics when I
-                                                        decided to change many things in my life. Many subjects there,
-                                                        like statistic, databases or programming courses gave me good
-                                                        start and basic knowledge.
-                                                    </li>
-                                                </ul>
-                                            </div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+    <div style="padding-top: 20px; padding-bottom: 0px;" class="colorlib-work">
+        <div class="col-md-12">
+            <div class="colorlib-work-featured colorlib-bg-white animate-box" style="padding-top:55px;padding-bottom:10px;margin-bottom: 0px;">
+                <h2 class="text-center">Education</h2>
+            </div>
+        </div>
+    </div>
 
-                    <div class="row-pb-sm">
-						<div class="work-flex">
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_maribor.png' %});"></a>
-									</div>
-								</div>
-							</div>
-							<div class="half animate-box">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t desc">
-											<div class="display-tc">
-												<h2><a href="#">University of Maribor, Slovenia</a></h2>
-                                                <ul>
-												    <li>Erasmus studies, Faculty of Electrical Engineering and Computer Science, winter semester</li>
-											        <li>
-                                                        By living half a year abroad and beeing in multinational
-                                                        environment, and studying at place where almost every course
-                                                        included a project, I learned how to cooperate with other
-                                                        people in english.
-                                                    </li>
-                                                </ul>
-                                            </div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+    <div style="padding-top: 50px;" class="colorlib-work">
+        <div class="row-pb-sm">
+            <div class="work-flex">
+                <div class="half animate-box">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 col-md-push-12 no-gutters">
+                            <a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_uep.png' %});"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half animate-box">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 col-md-pull-12 no-gutters">
+                            <div class="display-t desc">
+                                <div class="display-tc">
+                                    <h2><a href="#">Poznań University of Economics and Business</a></h2>
+                                    <ul>
+                                        <li>Informatics and Econometrics faculty, Financial engineering specialization</li>
+                                        <li>
+                                            That was my first step to learn IT related topics when I
+                                            decided to change many things in my life. Many subjects there,
+                                            like statistic, databases or programming courses gave me good
+                                            start and basic knowledge.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				</div>
+        <div class="row-pb-sm">
+            <div class="work-flex">
+                <div class="half animate-box">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 no-gutters">
+                            <a href="#" class="work-img" style="background-size: contain; background-image: url({% static 'main_page/images/logo_maribor.png' %});"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half animate-box">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 no-gutters">
+                            <div class="display-t desc">
+                                <div class="display-tc">
+                                    <h2><a href="#">University of Maribor, Slovenia</a></h2>
+                                    <ul>
+                                        <li>Erasmus studies, Faculty of Electrical Engineering and Computer Science, winter semester</li>
+                                        <li>
+                                            By living half a year abroad and beeing in multinational
+                                            environment, and studying at place where almost every course
+                                            included a project, I learned how to cooperate with other
+                                            people in english.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-			</div>
-		</div>
 
 {% endblock %}
+
+{% comment %}
 
 {% block scripts %}
 
@@ -346,7 +348,7 @@
       $('#download_cv').click(function(event) {
         event.preventDefault();
 
-        if ($('#g-recaptcha-response').val() != '') {
+        if ($('#g-recaptcha-response').val() == '') {
             $('#download_cv_waiting').show();
             $('#download_cv').prop('disabled', true);
 
@@ -361,9 +363,9 @@
                   csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
                   captcha: $('#g-recaptcha-response').val(),
               }
-            }).done(function() {
+            }).done(function(response) {
               $('#download_cv_waiting').hide();
-              $('#download_cv').val("Message sent successfully!");
+              $('#download_cv').val("Message sent successfully!"+JSON.stringify(response));
 
             }).fail(function() {
               $('#download_cv').val("Something went wrong, try again or try another form of contact");
@@ -379,3 +381,5 @@
     </script>
 
 {% endblock %}
+
+{% endcomment %}

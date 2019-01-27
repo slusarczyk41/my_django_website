@@ -5,8 +5,11 @@ from django.db.models import F
 from django.utils import timezone
 from django_ajax.decorators import ajax
 from django.core.mail import EmailMessage
+from wsgiref.util import FileWrapper
+from django.http import HttpResponse
 
 import requests
+import os
 
 
 def index(request):
@@ -78,5 +81,8 @@ def contact_endpoint(request):
 
 @ajax
 def download_cv_endpoint(request):
-
-    return 'bla'
+    filename = 'media/to_download/Ślusarczyk_Jacek_CV_ENG.pdf'
+    content = FileWrapper(filename)
+    response = HttpResponse(content, content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename=%s' % 'Ślusarczyk_Jacek_CV_ENG.pdf'
+    return response
