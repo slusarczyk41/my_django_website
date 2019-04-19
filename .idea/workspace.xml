@@ -2,36 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acee2c4a-6115-48f7-86df-13e7077698df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/main_page/about_raw.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/main_page/block_services.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/main_page/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/main_page/contact_raw.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/main_page/shop.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/main_page/work-grid-without-text.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/main_page/work-grid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/main_page/work.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/memes/2019/01/21/50258943_287072088595738_617853113071566848_n_uFJwWVV.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes/settings_dev.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes/settings_prod.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/migrations/0002_auto_20190125_1408.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/static/memes_app/images/Screenshot_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/templates/memes_app/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/validators.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memes_app/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_properties/dupa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/memes_app/images/Screenshot_1.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,12 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="270">
-                <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <first_editor relative-caret-position="324">
+                <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               </first_editor>
               <second_editor />
             </state>
@@ -54,34 +30,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_page/urls.py">
+        <entry file="file://$PROJECT_DIR$/env_properties/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="18">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_page/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-587">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Makefile">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/prod-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="22" column="7" selection-start-line="22" selection-end-line="22" selection-end-column="7" />
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_page/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#2#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_page/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_page/models.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_page/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_page/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -112,7 +130,6 @@
         <option value="$PROJECT_DIR$/memes/templates/memes/index.html" />
         <option value="$PROJECT_DIR$/root_dir/wsgi.py" />
         <option value="$PROJECT_DIR$/root_dir/urls.py" />
-        <option value="$PROJECT_DIR$/main_page/urls.py" />
         <option value="$PROJECT_DIR$/root_dir/settings.py" />
         <option value="$PROJECT_DIR$/mems/apps.py" />
         <option value="$PROJECT_DIR$/memes_app/apps.py" />
@@ -140,7 +157,10 @@
         <option value="$PROJECT_DIR$/memes/wsgi.py" />
         <option value="$PROJECT_DIR$/env_properties/nginx/nginx.conf" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/env_properties/dupa" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/main_page/urls.py" />
       </list>
     </option>
   </component>
@@ -165,6 +185,16 @@
             <path>
               <item name="my_django_website" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_django_website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_django_website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_django_website" type="462c0819:PsiDirectoryNode" />
+              <item name="memes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_django_website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_django_website" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,16 +268,15 @@
       <updated>1547916421059</updated>
       <workItem from="1547916422650" duration="3395000" />
       <workItem from="1548065545958" duration="16712000" />
-      <workItem from="1555695804818" duration="1243000" />
+      <workItem from="1555695804818" duration="3717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21350000" />
+    <option name="totallyTimeSpent" value="23824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="83" y="800" width="1837" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2585148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -276,21 +305,11 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/memes_app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/env_properties/dev/dev.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../django_tutorial_basics/moja_stronaa/polls/static/polls/images/Screenshot_1.png" />
     <entry file="file://$PROJECT_DIR$/../django_tutorial_basics/moja_stronaa/polls/apps.py" />
-    <entry file="file://$PROJECT_DIR$/main_page/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env_properties/dev/base.txt" />
     <entry file="file://$PROJECT_DIR$/env_properties/prod/base.txt" />
     <entry file="file://$PROJECT_DIR$/main_page/static/main_page/css/custom.css" />
@@ -305,13 +324,6 @@
     <entry file="file://$PROJECT_DIR$/main_page/static/main_page/js/portfolio.js" />
     <entry file="file://$PROJECT_DIR$/main_page/templates/main_page/home.html" />
     <entry file="file://$PROJECT_DIR$/../django_tutorial_basics/moja_stronaa/polls/views.py" />
-    <entry file="file://$PROJECT_DIR$/main_page/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../django_tutorial_basics/moja_stronaa/polls/admin.py" />
     <entry file="file://$PROJECT_DIR$/memes_app/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -346,29 +358,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env_properties/dev/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../django_tutorial_basics/moja_stronaa/env_properties/nginx/nginx.conf" />
     <entry file="file://$PROJECT_DIR$/../django_tutorial_basics/moja_stronaa/prod-compose.yml" />
-    <entry file="file://$PROJECT_DIR$/env_properties/nginx/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/base_site.html" />
     <entry file="file://$PROJECT_DIR$/../django_tutorial_basics/moja_stronaa/polls/templates/polls/detail.html" />
     <entry file="file://$PROJECT_DIR$/memes/settings.py">
@@ -472,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prod-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_page/templates/main_page/about_raw.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-270" />
@@ -494,30 +478,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_page/urls.py">
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
+    <entry file="file://$PROJECT_DIR$/env_properties/base.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env_properties/nginx/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="7" selection-start-line="22" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="162">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env_properties/dev/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env_properties/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <first_editor relative-caret-position="324">
+            <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_page/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#2#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_page/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_page/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_page/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_page/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prod-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,3 @@
-import sys
-
 from django.urls import path
 
 from . import views
@@ -13,7 +11,4 @@ urlpatterns = [
     path('valuation/', views.valuation, name='valuation'),
     path('contact_endpoint/', views.contact_endpoint, name='contact_endpoint'),
     path('download_cv_endpoint/', views.download_cv_endpoint, name='download_cv_endpoint'),
-    # path('<int:question_id>/', views.detail, name='detail'),
-    # path('<int:question_id>/results/', views.results, name='results'),
-    # path('<int:question_id>/vote/', views.vote, name='vote')
 ]
