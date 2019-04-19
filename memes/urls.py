@@ -24,7 +24,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', include('main_page.urls')),
     path('admin/', admin.site.urls),
-    path('memes/', include('memes_app.urls')),
 ]
 
 if settings.DEBUG:

@@ -11,9 +11,9 @@ The nice feature worth to mentions is that I connected an email service with
 web page, so you can send me a message through the form, and I will get
 forwarded email from @dataguy.pl domain.
 
-###### Makefile main commands (it is very likely most of them will require sudo)
-- make install-docker - install docker?
-- make up-prod - build and initialize website
-- make up-dev - for development
+###### Makefile main commands (it is very likely that most of them will require sudo)
+- make install-docker - install docker
+- make up-prod - build and initialize website (0.0.0.0)
+- make up-dev - for development (0.0.0.0:8000)
 
 The whole thing is live thanks to the free trial on Google Cloud services :)

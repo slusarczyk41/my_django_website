@@ -10,7 +10,5 @@ DEBUG = False
 ALLOWED_HOSTS = [
     '0.0.0.0',
     'dataguy.pl',
-    'dataguy',
     'www.dataguy.pl',
-    'modernhippie.eu',
 ]

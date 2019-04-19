@@ -33,7 +33,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'memes_app.apps.MemesAppConfig',
     'main_page.apps.MainPageConfig',
 
     'django.contrib.admin',
